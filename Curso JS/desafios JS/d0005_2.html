@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang=pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fazendo Programa</title>
+    <link rel="shortcut icon" href="nerd..ico.ico" type="image/x-icon">
+    <style>
+        div#area{
+            font: normal 15pt arial;
+            background: rgb(157, 220, 94);
+            width: 300px;
+            height: 300px;
+            line-height: 300px;
+            text-align: center 
+        }
+    </style>
+</head>
+<body>
+    <div id="area">
+        Duvido vosmecê me apertar...
+    </div>
+</body>
+    <script>
+        var a = document.getElementById ('area')
+        a.addEventListener ('click', clicar)
+        a.addEventListener ('mouseenter', entrar)
+        a.addEventListener ('mouseout', sair)
+        function clicar () {
+        a.innerText = 'Me Apertou!!!'
+        }
+        function entrar (){
+            a.innerText = 'Me Aperta, anda!'
+        }
+        function sair () {
+            a.innerText = 'Obrigado pela apertadinha...'
+        }
+    </script>
+</html>
